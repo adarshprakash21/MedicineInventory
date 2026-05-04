@@ -1,0 +1,66 @@
+{
+  "medicines": [
+    {
+      "id": "62afc912-220b-4af1-b087-e5a062951e6c",
+      "fullName": "test",
+      "notes": "test",
+      "expiryDate": "2026-04-30",
+      "quantity": 0,
+      "price": 100,
+      "brand": "test"
+    },
+    {
+      "id": "c14dfc21-9a22-4c50-ab3b-245f891d4b77",
+      "fullName": "dsfasf",
+      "notes": "asdas",
+      "expiryDate": "2026-04-30",
+      "quantity": 0,
+      "price": 324,
+      "brand": "asdfsdf"
+    },
+    {
+      "id": "c445510c-8836-4d8d-a865-6bb29170dfbd",
+      "fullName": "dfsdf",
+      "notes": "dfhgfg",
+      "expiryDate": "2026-04-30",
+      "quantity": 5,
+      "price": 100,
+      "brand": "gdfg"
+    },
+    {
+      "id": "9320430c-4c7d-44ed-911f-7927dea41cfe",
+      "fullName": "dfgdfg",
+      "notes": "ertert",
+      "expiryDate": "2026-07-10",
+      "quantity": 8,
+      "price": 454,
+      "brand": "dfgdfgdf"
+    }
+  ],
+  "sales": [
+    {
+      "id": "a4160a5b-7452-44ae-bbef-2894ca468149",
+      "medicineId": "62afc912-220b-4af1-b087-e5a062951e6c",
+      "quantitySold": 1,
+      "soldAtUtc": "2026-05-01T15:18:14.276346Z"
+    },
+    {
+      "id": "e07db03c-bc09-4221-8f78-fd179995bca9",
+      "medicineId": "62afc912-220b-4af1-b087-e5a062951e6c",
+      "quantitySold": 9,
+      "soldAtUtc": "2026-05-02T05:57:00.0246475Z"
+    },
+    {
+      "id": "a6010583-0e50-4af1-bbed-ee5c5a6920f5",
+      "medicineId": "c14dfc21-9a22-4c50-ab3b-245f891d4b77",
+      "quantitySold": 1,
+      "soldAtUtc": "2026-05-02T10:25:50.1621322Z"
+    },
+    {
+      "id": "cf3d0a67-f583-4f02-8715-385e3aca2768",
+      "medicineId": "9320430c-4c7d-44ed-911f-7927dea41cfe",
+      "quantitySold": 2,
+      "soldAtUtc": "2026-05-02T10:43:00.5650339Z"
+    }
+  ]
+}
