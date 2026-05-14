@@ -1,16 +1,18 @@
 using MedicineInventory.Models;
 using MedicineInventory.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MedicineInventory.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class MedicinesController : ControllerBase
 {
-    private readonly InventoryStore _store;
+    private readonly IInventoryStore _store;
 
-    public MedicinesController(InventoryStore store)
+    public MedicinesController(IInventoryStore store)
     {
         _store = store;
     }

@@ -62,5 +62,21 @@
       "quantitySold": 2,
       "soldAtUtc": "2026-05-02T10:43:00.5650339Z"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "password": null,
+      "doj": "2026-04-30T00:00:00",
+      "token": null
+    },
+    {
+      "id": 2,
+      "name": "test",
+      "password": "$2b$10$IRJwfQXw4uZrlm2UDMiXB.JTQfgm/pEhVlyEOah6blgPpbtINDcQi",
+      "doj": "2026-05-14",
+      "token": "string"
+    }
   ]
 }

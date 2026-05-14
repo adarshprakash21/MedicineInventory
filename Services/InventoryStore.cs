@@ -3,7 +3,7 @@ using MedicineInventory.Models;
 
 namespace MedicineInventory.Services;
 
-public class InventoryStore
+public class InventoryStore: IInventoryStore
 {
     private readonly string _dataFilePath;
     private readonly SemaphoreSlim _sync = new(1, 1);
@@ -190,7 +190,7 @@ public class InventoryStore
         return sales.FirstOrDefault(s => s.Id == id);
     }
 
-    private async Task<InventoryDataFile> ReadDataAsync()
+    public async Task<InventoryDataFile> ReadDataAsync()
     {
         await _sync.WaitAsync();
         try
@@ -215,7 +215,7 @@ public class InventoryStore
         return data ?? new InventoryDataFile();
     }
 
-    private async Task WriteDataInternalAsync(InventoryDataFile data)
+    public async Task WriteDataInternalAsync(InventoryDataFile data)
     {
         await using var stream = File.Create(_dataFilePath);
         await JsonSerializer.SerializeAsync(stream, data, JsonOptions);
